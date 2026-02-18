@@ -45,16 +45,17 @@ const Blog = () => {
     <section className="min-h-screen bg-[#F9FAFB] pt-28 pb-20">
 
       {/* Hero Heading */}
-      <div
-        className={`text-center mb-16 transition-all duration-700 ${
-          visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
-      >
-        <h1 className="text-5xl font-bold bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] bg-clip-text text-transparent">
-  Our Blogs
-</h1>
-        <div className="w-24 h-1 bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] mx-auto mt-4 rounded-full"></div>
-      </div>
+<div
+  className={`text-center mb-16 transition-all duration-700 ${
+    visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+  }`}
+>
+  <h1 className="text-5xl font-bold text-[#bf00ff]">
+    Our Blogs
+  </h1>
+  <div className="w-24 h-1 bg-[#bf00ff] mx-auto mt-4 rounded-full"></div>
+
+</div>
 
       <div className="max-w-6xl mx-auto px-6">
 
@@ -71,21 +72,22 @@ const Blog = () => {
           />
 
           {/* Filters */}
-          <div className="flex gap-4">
-            {["All", "AI", "Automation"].map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setFilter(cat)}
-                className={`px-5 py-2 rounded-full transition-all duration-300 ${
-                  filter === cat
-                    ? "bg-gradient-to-r from-[#4F46E5] to-[#7C3AED] text-white shadow-lg scale-105"
-                    : "bg-white border border-gray-300 text-[#111827] hover:border-[#7C3AED]"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
+<div className="flex gap-4">
+  {["All", "AI", "Automation"].map((cat) => (
+    <button
+      key={cat}
+      onClick={() => setFilter(cat)}
+      className={`px-5 py-2 rounded-full transition-all duration-300 ${
+        filter === cat
+          ? "bg-gradient-to-r from-[#78184a] to-[#7C3AED] text-white shadow-lg scale-105"
+          : "bg-gradient-to-r from-[#78184a] to-[#7C3AED] text-white hover:opacity-90"
+      }`}
+    >
+      {cat}
+    </button>
+  ))}
+</div>
+
         </div>
 
         {/* Blog Cards */}
