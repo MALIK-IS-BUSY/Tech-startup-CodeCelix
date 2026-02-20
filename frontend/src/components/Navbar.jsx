@@ -53,7 +53,7 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <Link to="/pre-order">
+        <Link to="/signup">
           <button className="bg-gradient-to-r from-[#78184a] to-[#7C3AED] text-white px-5 py-2 rounded-full hover:opacity-90 transition">
             Sign Up
           </button>
@@ -115,7 +115,7 @@ const Navbar = () => {
               Contact
             </Link>
 
-            <Link to="/pre-order" onClick={() => setOpen(false)}>
+            <Link to="/signup" onClick={() => setOpen(false)}>
               <button className="bg-gradient-to-r from-[#78184a] to-[#7C3AED] text-white px-6 py-2 rounded-full hover:opacity-90 transition">
                 Sign Up
               </button>
